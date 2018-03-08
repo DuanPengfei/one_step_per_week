@@ -2,7 +2,7 @@
  * @Author: fei
  * @Date: 2018-03-06 15:56:55
  * @Last Modified by: fei
- * @Last Modified time: 2018-03-06 16:19:27
+ * @Last Modified time: 2018-03-08 09:16:36
  */
 'use strict';
 
@@ -44,9 +44,9 @@ function selectionSort(arr) {
  */
 {
     const arr = [9, 7, 8, 6, 4, 1, 3, 2, 5, 0];
-    const result = selectionSort(arr);
     const expected = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    console.log(`result: ${result}`);
+    const actual = selectionSort(arr);
+    console.log(`actual: ${actual}`);
     console.log(`expected: ${expected}`);
-    console.log(`assert: ${!assert.deepEqual(result, expected)}`);
+    console.log(`assert: ${!assert.deepEqual(actual, expected)}`);
 }

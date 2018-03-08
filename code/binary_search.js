@@ -2,7 +2,7 @@
  * @Author: fei
  * @Date: 2018-03-05 09:34:34
  * @Last Modified by: fei
- * @Last Modified time: 2018-03-06 16:19:41
+ * @Last Modified time: 2018-03-08 09:16:31
  */
 'use strict';
 
@@ -32,14 +32,14 @@ function binarySearch(bucket, target) {
     const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const item = 4;
     const expected = 3;
-    const result = binarySearch(data, item);
-    console.log(`actual: ${result}, expected: ${expected}, assert: ${!assert.equal(result, expected)}`);
+    const actual = binarySearch(data, item);
+    console.log(`actual: ${actual}, expected: ${expected}, assert: ${!assert.equal(actual, expected)}`);
 }
 
 {
     const data = ['ChenJinghui', 'DuanPengfei', 'JiQinghua', 'XuBo', 'YuanXiaoshan', 'ZhangChao'];
     const item = 'JiQinghua';
     const expected = 2;
-    const result = binarySearch(data, item);
-    console.log(`actual: ${result}, expected: ${expected}, assert: ${!assert.equal(result, expected)}`);
+    const actual = binarySearch(data, item);
+    console.log(`actual: ${actual}, expected: ${expected}, assert: ${!assert.equal(actual, expected)}`);
 }
