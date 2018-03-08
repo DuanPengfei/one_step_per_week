@@ -2,7 +2,7 @@
  * @Author: fei
  * @Date: 2018-03-05 09:34:34
  * @Last Modified by: fei
- * @Last Modified time: 2018-03-08 09:16:31
+ * @Last Modified time: 2018-03-08 15:00:44
  */
 'use strict';
 
@@ -16,10 +16,10 @@ const assert = require('assert');
 function binarySearch(bucket, target) {
     let low = 0;
     let high = bucket.length - 1;
-    while(low <= high) {
+    while (low <= high) {
         const mid = Math.floor((low + high) / 2);
-        if(target === bucket[mid]) return mid;
-        if(bucket[mid] < target) low = mid + 1;
+        if (target === bucket[mid]) return mid;
+        if (bucket[mid] < target) low = mid + 1;
         else high = mid - 1;
     }
     return null;

@@ -2,7 +2,7 @@
  * @Author: fei
  * @Date: 2018-03-06 15:56:55
  * @Last Modified by: fei
- * @Last Modified time: 2018-03-08 09:16:36
+ * @Last Modified time: 2018-03-08 15:00:57
  */
 'use strict';
 
@@ -16,8 +16,8 @@ function findSmallestIndex(arr) {
     let smallest = arr[0];
     let smallestIndex = 0;
 
-    for(let i = 1; i < arr.length; i++) {
-        if(arr[i] < smallest) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
             smallest = arr[i];
             smallestIndex = i;
         }
@@ -32,7 +32,7 @@ function findSmallestIndex(arr) {
  */
 function selectionSort(arr) {
     const newArr = [];
-    while(arr.length > 0) {
+    while (arr.length > 0) {
         const smallestIndex = findSmallestIndex(arr);
         newArr.push(arr.splice(smallestIndex, 1)[0]);
     }

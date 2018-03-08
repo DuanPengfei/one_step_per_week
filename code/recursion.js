@@ -2,7 +2,7 @@
  * @Author: fei
  * @Date: 2018-03-08 09:10:37
  * @Last Modified by: fei
- * @Last Modified time: 2018-03-08 09:20:52
+ * @Last Modified time: 2018-03-08 14:00:21
  */
 'use strict';
 
@@ -19,6 +19,7 @@ function factorial(num) {
 
 /**
  * recursion factorial with tail call
+ * but pay attention to "now Node.js had't support tail recursion optimization"
  * @param {Number} num factorial num
  * @param {Number} result factorial result, default = 1
  */
@@ -32,14 +33,14 @@ function tailCallFactorial(num, result = 1) {
  */
 {
     const num = 5;
-    const actual = factorial(num);
     const expected = 120;
+    const actual = factorial(num);
     console.log(`actual: ${actual}, expected: ${expected}, assert: ${!assert(actual, expected)}`);
 }
 
 {
     const num = 5;
-    const actual = tailCallFactorial(num);
     const expected = 120;
+    const actual = tailCallFactorial(num);
     console.log(`actual: ${actual}, expected: ${expected}, assert: ${!assert(actual, expected)}`);
 }
